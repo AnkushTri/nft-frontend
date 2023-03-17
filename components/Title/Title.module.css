@@ -1,0 +1,25 @@
+
+.tilte{
+    width: 100%;
+}
+
+.tilte_box{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.tilte_box h2{
+    font-size: 3rem;
+    line-height: 0;
+}
+
+
+@media screen and (min-device-width:320px) and (max-device-width:425px) {
+    .tilte{
+        width: 90%;
+    }
+    .tilte_box{
+        font-size: 1.8rem;
+        line-height: 0;
+    }
+}
