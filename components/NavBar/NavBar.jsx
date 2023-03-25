@@ -25,24 +25,25 @@ const NavBar = () => {
     const [openSideMenu, setOpenSideMenu] = useState(false);
 
     // const router = useRouter();
-    
-    const openMenu = (e) => {
-        const btnText = e.target.innerText;
-        if (btnText == "Discover") {
-            setDiscover(true);
+
+    const openDiscover = () => {
+        if (!discover) {
+            setProfile(false);
             setHelp(false);
+            setDiscover(true);
             setNotification(false);
-            setProfile(false);
-        } else if (btnText == "Help Center") {
-            setDiscover(false);
-            setHelp(true);
-            setNotification(false);
-            setProfile(false);
         } else {
             setDiscover(false);
-            setHelp(false);
-            setNotification(false);
+        }
+    };
+    const openHelp = () => {
+        if (!help) {
             setProfile(false);
+            setHelp(true);
+            setDiscover(false);
+            setNotification(false);
+        } else {
+            setHelp(false);
         }
     };
 
@@ -101,7 +102,7 @@ const NavBar = () => {
                     <div className={Style.navbar_container_right}>
                     <div className={Style.navbar_container_right_discover}>
                         {/* DISCOVER MENU */}
-                        <p onClick={(e) => openMenu(e)}>Discover</p>
+                        <p onClick={() => openDiscover()}>Discover</p>
                         {discover && (
                             <div className={Style.navbar_container_right_discover_box}>
                                 <Discover />
@@ -111,7 +112,7 @@ const NavBar = () => {
 
                     {/* HELP CENTER MENU */}
                      <div className={Style.navbar_container_right_help}>
-                        <p onClick={(e) => openMenu(e)}>Help Center</p>
+                        <p onClick={() => openHelp()}>Help Center</p>
                         {help && (
                             <div className={Style.navbar_container_right_help_box}>
                                 <HelpCenter />

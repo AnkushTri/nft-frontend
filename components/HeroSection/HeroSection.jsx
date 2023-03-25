@@ -19,7 +19,7 @@ const HeroSection = () => {
           <Button btnName='Start your search'/>
         </div>
         <div className={Style.heroSection_box_right}>
-          <Image src={images.hero} alt="Hero section" width={600} height={600}/>
+          <Image src={images.hero} alt="Hero section" width={450} height={500}/>
         </div>
       </div>
     </div>

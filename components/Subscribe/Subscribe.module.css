@@ -1,6 +1,7 @@
 .subscribe {
     width: 100%;
-    margin-bottom: -5rem;
+    margin-top: -6rem;
+    margin-bottom:-6rem;
 }
 
 .subscribe_box {
@@ -46,7 +47,7 @@
 .subscribe_box_left_input {
     margin-top: 3rem;
     padding: 1rem;
-    width: 80%;
+    width: 90%;
     border-radius: 4rem;
     background-color: var(--icons-color);
     color: var(--main-bg-color);
@@ -71,15 +72,54 @@
     font-size: 2rem;
 }
 
-@media screen and (min-device-width: 320px) and (max-device-width: 768px) {
+@media screen and (min-device-width: 320px) and (max-device-width: 470px) {
+    .subscribe{
+        margin-top: -10rem; 
+        margin-bottom:-7rem;
+    }
     .subscribe_box {
         width: 90%;
         grid-template-columns: 1fr;
         gap: 4rem;
     }
 
+    .subscribe_box p {
+        word-wrap: break-word;
+        font-size: 1rem;
+    }
+
     .subscribe_box_left_input {
-        width: 100%;
+        width: 90%;
+        padding: 1rem;
+    }
+
+    .subscribe_box_left h2 {
+        font-size: 2rem;
+    }
+
+    .subscribe_box_right{
+        width:15rem;
+    }
+    .image{
+        width:80vw;
+        
+    }
+}
+
+@media screen and (min-device-width: 470px) and (max-device-width: 768px) {
+    .subscribe_box {
+        width: 90%;
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+
+   .subscribe_box p {
+       word-wrap:inherit ;
+       font-size: 1rem;
+   }
+
+    .subscribe_box_left_input {
+        width: 90%;
         padding: 1rem;
     }
 

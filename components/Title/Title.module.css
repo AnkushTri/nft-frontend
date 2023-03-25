@@ -1,9 +1,10 @@
 
 .tilte{
     width: 100%;
+    margin-top: -3rem;
 }
 
-.tilte_box{
+.title_box{
     width: 80%;
     margin: 0 auto;
 }

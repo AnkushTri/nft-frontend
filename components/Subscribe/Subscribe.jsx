@@ -38,6 +38,7 @@ const Subscribe = () => {
             alt="get update"
             height={400}
             width={450}
+            className={Style.image}
           />
         </div>
       </div>
