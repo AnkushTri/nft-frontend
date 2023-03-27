@@ -13,7 +13,7 @@ const discover=
   },
   {
     name:"Search",
-    link:"search"
+    link:"searchPage"
   },
   {
     name:"Auther Profile",
